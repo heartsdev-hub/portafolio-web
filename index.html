@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#020817">
+    <meta name="description" content="Portafolio profesional de Jack Pérez, Ingeniero de Software especializado en desarrollo Full Stack, Java, Spring Boot, React, bases de datos, Cloud y DevOps.">
+    <title>Jack Pérez | Ingeniero de Software</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav-wrap shell" aria-label="Navegación principal">
+        <a class="brand" href="#inicio" aria-label="Jack Pérez, inicio">
+          <span class="brand-mark">JP</span>
+          <span>Jack Pérez</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-menu">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-menu" id="main-menu">
+          <div class="nav-links">
+            <a href="#inicio" data-section="inicio">Inicio</a>
+            <a href="#sobre-mi" data-section="sobre-mi">Sobre mí</a>
+            <a href="#habilidades" data-section="habilidades">Habilidades</a>
+            <a href="#experiencia" data-section="experiencia">Experiencia</a>
+            <a href="#proyectos" data-section="proyectos">Proyectos</a>
+            <a href="#contacto" data-section="contacto">Contacto</a>
+          </div>
+          <a class="button button-outline nav-cv" href="jack-cv.pdf" download="cv-jack-perez.pdf">
+            <span class="icon" aria-hidden="true">↓</span> Descargar CV
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section-anchor" id="inicio">
+        <div class="shell hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Hola, soy</p>
+            <h1>Jack <span>Pérez</span></h1>
+            <p class="hero-role">Ingeniero de Software <i aria-hidden="true">|</i> Full Stack Developer</p>
+            <p class="lead">Desarrollo aplicaciones web escalables, seguras y eficientes utilizando tecnologías modernas. Me especializo en construir soluciones backend robustas, interfaces modernas y arquitecturas orientadas a buenas prácticas de ingeniería de software.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#proyectos">Ver proyectos <span aria-hidden="true">→</span></a>
+              <a class="button button-quiet" href="#contacto">Contactarme</a>
+            </div>
+            <div class="social-links" aria-label="Redes sociales">
+              <a class="social-link has-label" data-social="github" href="https://github.com/heartsdev-hub" target="_blank" rel="noreferrer" aria-label="GitHub de Jack Pérez"><span class="social-mark" aria-hidden="true">GH</span><span>GitHub</span></a>
+              <a class="social-link has-label" data-social="linkedin" href="https://linkedin.com/in/heartsdev" target="_blank" rel="noreferrer" aria-label="LinkedIn de Jack Pérez"><span class="social-mark" aria-hidden="true">in</span><span>LinkedIn</span></a>
+            </div>
+          </div>
+
+          <div class="hero-art reveal" aria-label="Ilustración de arquitectura de software">
+            <div class="architecture-frame">
+              <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+              <div class="float-chip chip-api"><span class="chip-icon">&lt;/&gt;</span><span>API Gateway</span></div>
+              <div class="float-chip chip-db"><span class="chip-icon">DB</span><span>PostgreSQL</span></div>
+              <div class="float-chip chip-cloud"><span class="chip-icon">☁</span><span>Cloud</span></div>
+              <div class="float-chip chip-auth"><span class="chip-icon">✓</span><span>Auth JWT</span></div>
+              <div class="code-window">
+                <div class="window-bar"><div class="window-dots"><i></i><i></i><i></i></div><span>backend.service.ts</span></div>
+                <div class="code-content">
+                  <p><b>const</b> api = <em>secure</em>();</p>
+                  <p><small>await</small> api.connect(<strong>"cloud"</strong>);</p>
+                  <p><label>POST</label> /auth/session</p>
+                  <p><label>GET</label> /projects/featured</p>
+                  <div class="architecture-mini"><span class="mini-heading">⌘ &nbsp;system architecture</span><div><i>React</i><i>Spring</i><i>SQL</i></div></div>
+                </div>
+              </div>
+              <span class="connector connector-a"></span><span class="connector connector-b"></span><span class="connector connector-c"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-about section-anchor" id="sobre-mi">
+        <div class="shell about-grid">
+          <div class="profile-panel reveal" aria-label="Perfil profesional de Jack Pérez">
+            <div class="profile-top"><span class="status-pill">Software Engineer</span><span class="shield-icon" aria-hidden="true">✓</span></div>
+            <div class="profile-center"><img class="profile-photo" src="foto.jpg" alt="Retrato profesional de Jack Pérez" width="150" height="180"><h3>Jack Pérez</h3><p>Backend · Frontend · Cloud</p></div>
+            <div class="profile-tags"><span><b>&lt;/&gt;</b> APIs</span><span><b>▧</b> Apps</span><span><b>✓</b> Auth</span></div>
+          </div>
+          <div class="about-copy reveal">
+            <p class="section-kicker">Sobre mí</p>
+            <h2>Ingeniería de software con foco en producto y arquitectura.</h2>
+            <p class="body-copy">Soy Ingeniero de Software enfocado en el desarrollo de aplicaciones web modernas y escalables. Me especializo en backend, APIs REST, seguridad, bases de datos, frontend moderno y buenas prácticas de arquitectura de software.</p>
+            <a class="button button-outline about-cta" href="#contacto">Conocer más <span aria-hidden="true">→</span></a>
+            <div class="stats-grid">
+              <article class="stat-card"><span class="stat-symbol" aria-hidden="true">◷</span><strong>2+</strong><p>Años de experiencia</p></article>
+              <article class="stat-card"><span class="stat-symbol" aria-hidden="true">&lt;/&gt;</span><strong>15+</strong><p>Proyectos completados</p></article>
+              <article class="stat-card"><span class="stat-symbol" aria-hidden="true">⌘</span><strong>10+</strong><p>Tecnologías utilizadas</p></article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-band section-anchor" id="habilidades">
+        <div class="shell">
+          <div class="section-heading centered reveal"><p class="section-kicker">Stack técnico</p><h2>Habilidades y Tecnologías</h2><p class="body-copy">Tecnologías organizadas por área para crear productos completos: backend sólido, interfaces modernas, persistencia confiable y despliegues listos para crecer.</p></div>
+          <div class="skill-grid" id="skill-groups"></div>
+        </div>
+      </section>
+
+      <section class="section section-anchor" id="experiencia">
+        <div class="shell">
+          <div class="section-heading reveal"><p class="section-kicker">Trayectoria</p><h2>Experiencia</h2><p class="body-copy">Proyectos orientados a resolver procesos reales con aplicaciones web, APIs seguras y bases de datos relacionales.</p></div>
+          <div class="timeline" id="experience-list"></div>
+        </div>
+      </section>
+
+      <section class="section section-band section-anchor" id="proyectos">
+        <div class="shell">
+          <div class="section-heading centered reveal"><p class="section-kicker">Portafolio</p><h2>Proyectos Destacados</h2><p class="body-copy">Aplicaciones enfocadas en gestión, comercio electrónico y APIs, con una base técnica preparada para crecer y mantenerse.</p></div>
+          <div class="project-grid" id="project-list"></div>
+        </div>
+      </section>
+
+      <section class="section section-contact section-anchor" id="contacto">
+        <div class="shell contact-grid">
+          <div class="contact-copy reveal">
+            <p class="section-kicker">Contacto</p><h2>¿Tienes un proyecto en mente?</h2><p class="contact-big">Trabajemos juntos.</p>
+            <p class="body-copy">Estoy disponible para oportunidades profesionales, proyectos freelance y colaboraciones relacionadas con desarrollo de software.</p>
+            <div class="contact-details">
+              <a href="mailto:heartsdev2399@gmail.com" data-contact="email"><span class="detail-icon" aria-hidden="true">@</span><span>heartsdev2399@gmail.com</span></a>
+              <span><span class="detail-icon" aria-hidden="true">⌖</span><span>Perú</span></span>
+              <a href="https://linkedin.com/in/heartsdev" data-social="linkedin" target="_blank" rel="noreferrer"><span class="detail-icon" aria-hidden="true">in</span><span>linkedin.com/in/heartsdev</span></a>
+              <a href="https://github.com/heartsdev-hub" data-social="github" target="_blank" rel="noreferrer"><span class="detail-icon" aria-hidden="true">GH</span><span>github.com/heartsdev-hub</span></a>
+            </div>
+          </div>
+          <form class="contact-form reveal" id="contact-form" novalidate>
+            <div class="form-row">
+              <label>Nombre<input name="name" type="text" placeholder="Tu nombre" required></label>
+              <label>Correo electrónico<input name="email" type="email" placeholder="tu@email.com" required></label>
+            </div>
+            <label>Asunto<input name="subject" type="text" placeholder="Nuevo proyecto" required></label>
+            <label>Mensaje<textarea name="message" rows="5" placeholder="Cuéntame sobre tu idea, objetivo o necesidad técnica." required></textarea></label>
+            <button class="button button-primary" type="submit">Enviar mensaje <span aria-hidden="true">↗</span></button>
+            <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-content">
+        <a class="brand" href="#inicio"><span class="brand-mark">JP</span><span>Jack Pérez</span></a>
+        <p>© <span id="current-year">2026</span> Jack Pérez. Todos los derechos reservados.</p>
+        <div class="footer-actions"><a class="social-link has-label" data-social="github" href="https://github.com/heartsdev-hub" target="_blank" rel="noreferrer" aria-label="GitHub"><span class="social-mark" aria-hidden="true">GH</span><span>GitHub</span></a><a class="social-link has-label" data-social="linkedin" href="https://linkedin.com/in/heartsdev" target="_blank" rel="noreferrer" aria-label="LinkedIn"><span class="social-mark" aria-hidden="true">in</span><span>LinkedIn</span></a><a class="back-top" href="#inicio" aria-label="Volver al inicio">↑</a></div>
+      </div>
+    </footer>
+  </body>
+</html>
